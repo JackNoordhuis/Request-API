@@ -1,0 +1,5 @@
+# Redirect all traffic through the example interface
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(.+)$ Example.php [QSA,L]
+</IfModule>
