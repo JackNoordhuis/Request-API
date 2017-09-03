@@ -1,13 +1,10 @@
-# RESTful API Base
-___This is a basic REST API Interface written in PHP that allows you to extend it's functionality quickly and easily.___
+# Request API
+___This is a basic Request API interface written in PHP that allows you to extend it's functionality quickly and easily.___
 
-The REST Base allows you create requests as if they're commands, you register requests through the Interface and then it
-adds them to a request map that is cached when the first request is completed to reduce request response times.
+The Request API allows you to handle requests as if they're commands, you register requests through the interface then they are added to a simple map.
 
-This Interface includes an advanced caching system to ensure request times are minimised as much as possible, each time a
-request is made the Interface checks for an existing cache before attempting to load the request classes all over again.
-When a cache directory is created a .htaccess file is automatically created in the directory to deny any HTTP
-requests access for your security.
+This interface includes an advanced caching system to ensure request times are minimised as much as possible. Each time a
+request is made, the interface checks for an existing cache before attempting to load everything again. The cache files are stored in a directory where a .htaccess file is automatically generated that denies any incoming HTTP/HTTPS requests for security purposes.
 
 ##Basic implementation
 __There is a basic implementation of the REST Base API included in the /example/ directory that shows you the basic
